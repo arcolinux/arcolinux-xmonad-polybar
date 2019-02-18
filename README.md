@@ -1,0 +1,2 @@
+# ArcoLinux Xmonad
+
