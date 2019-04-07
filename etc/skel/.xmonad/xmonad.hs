@@ -136,6 +136,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask, xK_f), sendMessage $ Toggle NBFULL)
   , ((modMask, xK_h), spawn $ "urxvt 'htop task manager' -e htop" )
   , ((modMask, xK_m), spawn $ "pragha" )
+  , ((modMask, xK_q), kill )
   , ((modMask, xK_r), spawn $ "rofi-theme-selector" )
   , ((modMask, xK_t), spawn $ "urxvt" )
   , ((modMask, xK_v), spawn $ "pavucontrol" )
