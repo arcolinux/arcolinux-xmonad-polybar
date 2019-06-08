@@ -322,7 +322,9 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   --Belgian Azerty users use this line
   -- | (i, k) <- zip (XMonad.workspaces conf) [xK_ampersand, xK_eacute, xK_quotedbl, xK_apostrophe, xK_parenleft, xK_section, xK_egrave, xK_exclam, xK_ccedilla, xK_agrave]
 
-      , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
+      , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)
+      , (\i -> W.greedyView i . W.shift i, shiftMask)]]
+     
   ++
   -- ctrl-{w,e,r}, Switch to physical/Xinerama screens 1, 2, or 3
   -- ctrl-shift-{w,e,r}, Move client to screen 1, 2, or 3
