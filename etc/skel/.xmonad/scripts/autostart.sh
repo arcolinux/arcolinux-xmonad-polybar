@@ -42,15 +42,17 @@ compton --config $HOME/.xmonad/scripts/compton.conf &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 
 #starting user applications at boot time
-#run discord &
 #nitrogen --restore &
 #run caffeine &
 #run vivaldi-stable &
 #run firefox &
 #run thunar &
-#run dropbox &
-#run insync start &
 #run spotify &
 #run atom &
 #run volumeicon &
+
 #run telegram-desktop &
+#run discord &
+#run dropbox &
+#run "insync start" &
+#run "ckb-next -b" &
