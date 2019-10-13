@@ -54,5 +54,5 @@ compton --config $HOME/.xmonad/scripts/compton.conf &
 #run telegram-desktop &
 #run discord &
 #run dropbox &
-#run "insync start" &
-#run "ckb-next -b" &
+#run insync start &
+#run ckb-next -b &
