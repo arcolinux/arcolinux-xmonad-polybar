@@ -159,6 +159,9 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask, xK_F11), spawn $ "rofi -show run -fullscreen" )
   , ((modMask, xK_F12), spawn $ "rofi -show run" )
 
+  -- FUNCTION KEYS
+  , ((0, xK_F12), spawn $ "xfce4-terminal --drop-down" )
+
   -- SUPER + SHIFT KEYS
 
   , ((modMask .|. shiftMask , xK_Return ), spawn $ "thunar")
