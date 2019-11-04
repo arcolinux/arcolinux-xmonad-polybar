@@ -26,7 +26,7 @@ function run {
 xsetroot -cursor_name left_ptr &
 
 #Some ways to set your wallpaper besides variety or nitrogen
-feh --bg-scale ~/.xmonad/wall.jpg &
+feh --bg-scale /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 #start the conky to learn the shortcuts
 (conky -c $HOME/.xmonad/scripts/system-overview) &
 
