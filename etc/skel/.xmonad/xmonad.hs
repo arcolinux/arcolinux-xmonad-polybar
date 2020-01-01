@@ -86,7 +86,7 @@ myManageHook = composeAll . concat $
     ]
     where
     -- doShiftAndGo = doF . liftM2 (.) W.greedyView W.shift
-    myCFloats = ["Arandr", "Galculator", "Oblogout", "feh", "mpv"]
+    myCFloats = ["Arandr", "Galculator", "Oblogout", "feh", "mpv", "Xfce4-terminal"]
     myTFloats = ["Downloads", "Save As..."]
     myRFloats = []
     myIgnores = ["desktop_window"]
@@ -244,15 +244,15 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- Decrease brightness
   , ((0, xF86XK_MonBrightnessDown), spawn $ "xbacklight -dec 5")
 
-  , ((0, xF86XK_AudioPlay), spawn $ "mpc toggle")
-  , ((0, xF86XK_AudioNext), spawn $ "mpc next")
-  , ((0, xF86XK_AudioPrev), spawn $ "mpc prev")
-  , ((0, xF86XK_AudioStop), spawn $ "mpc stop")
+--  , ((0, xF86XK_AudioPlay), spawn $ "mpc toggle")
+--  , ((0, xF86XK_AudioNext), spawn $ "mpc next")
+--  , ((0, xF86XK_AudioPrev), spawn $ "mpc prev")
+--  , ((0, xF86XK_AudioStop), spawn $ "mpc stop")
 
---  , ((0, xF86XK_AudioPlay), spawn $ "playerctl play-pause")
---  , ((0, xF86XK_AudioNext), spawn $ "playerctl next")
---  , ((0, xF86XK_AudioPrev), spawn $ "playerctl previous")
---  , ((0, xF86XK_AudioStop), spawn $ "playerctl stop")
+  , ((0, xF86XK_AudioPlay), spawn $ "playerctl play-pause")
+  , ((0, xF86XK_AudioNext), spawn $ "playerctl next")
+  , ((0, xF86XK_AudioPrev), spawn $ "playerctl previous")
+  , ((0, xF86XK_AudioStop), spawn $ "playerctl stop")
 
 
   --------------------------------------------------------------------
