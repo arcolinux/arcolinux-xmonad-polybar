@@ -86,7 +86,7 @@ myManageHook = composeAll . concat $
     ]
     where
     -- doShiftAndGo = doF . liftM2 (.) W.greedyView W.shift
-    myCFloats = ["Arandr", "Galculator", "Oblogout", "feh", "mpv", "Xfce4-terminal"]
+    myCFloats = ["Arandr", "Arcolinux-tweak-tool.py", "Arcolinux-welcome-app.py", "Galculator", "Oblogout", "feh", "mpv", "Xfce4-terminal"]
     myTFloats = ["Downloads", "Save As..."]
     myRFloats = []
     myIgnores = ["desktop_window"]
@@ -177,7 +177,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((controlMask .|. mod1Mask , xK_a ), spawn $ "xfce4-appfinder")
   , ((controlMask .|. mod1Mask , xK_b ), spawn $ "thunar")
   , ((controlMask .|. mod1Mask , xK_c ), spawn $ "catfish")
-  , ((controlMask .|. mod1Mask , xK_e ), spawn $ "evolution")
+  , ((controlMask .|. mod1Mask , xK_e ), spawn $ "arcolinux-tweak-tool")
   , ((controlMask .|. mod1Mask , xK_f ), spawn $ "firefox")
   , ((controlMask .|. mod1Mask , xK_g ), spawn $ "chromium -no-default-browser-check")
   , ((controlMask .|. mod1Mask , xK_i ), spawn $ "nitrogen")
@@ -190,7 +190,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((controlMask .|. mod1Mask , xK_t ), spawn $ "urxvt")
   , ((controlMask .|. mod1Mask , xK_u ), spawn $ "pavucontrol")
   , ((controlMask .|. mod1Mask , xK_v ), spawn $ "vivaldi-stable")
-  , ((controlMask .|. mod1Mask , xK_w ), spawn $ "atom")
+  , ((controlMask .|. mod1Mask , xK_w ), spawn $ "arcolinux-welcome-app")
   , ((controlMask .|. mod1Mask , xK_Return ), spawn $ "urxvt")
 
   -- ALT + ... KEYS
