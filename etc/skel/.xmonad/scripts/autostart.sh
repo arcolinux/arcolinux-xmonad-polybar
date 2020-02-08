@@ -25,6 +25,9 @@ function run {
 #cursor active at boot
 xsetroot -cursor_name left_ptr &
 
+#start ArcoLinux Welcome App
+run dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
+
 #Some ways to set your wallpaper besides variety or nitrogen
 feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 #start the conky to learn the shortcuts
