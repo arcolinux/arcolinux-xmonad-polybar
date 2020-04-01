@@ -86,7 +86,7 @@ myManageHook = composeAll . concat $
     ]
     where
     -- doShiftAndGo = doF . liftM2 (.) W.greedyView W.shift
-    myCFloats = ["Arandr", "Arcolinux-tweak-tool.py", "Arcolinux-welcome-app.py", "Galculator", "Oblogout", "feh", "mpv", "Xfce4-terminal"]
+    myCFloats = ["Arandr", "Arcolinux-tweak-tool.py", "Arcologout.py", "Arcolinux-welcome-app.py", "Galculator", "Oblogout", "feh", "mpv", "Xfce4-terminal"]
     myTFloats = ["Downloads", "Save As..."]
     myRFloats = []
     myIgnores = ["desktop_window"]
@@ -143,7 +143,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask, xK_v), spawn $ "pavucontrol" )
   , ((modMask, xK_w), spawn $ "vivaldi-stable" )
   , ((modMask, xK_y), spawn $ "polybar-msg cmd toggle" )
-  , ((modMask, xK_x), spawn $ "oblogout" )
+  , ((modMask, xK_x), spawn $ "arcolinux-logout" )
   , ((modMask, xK_Escape), spawn $ "xkill" )
   , ((modMask, xK_Return), spawn $ "urxvt" )
   , ((modMask, xK_F1), spawn $ "vivaldi-stable" )
