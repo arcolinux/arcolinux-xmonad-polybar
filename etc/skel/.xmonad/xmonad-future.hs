@@ -205,7 +205,6 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((mod1Mask, xK_Down), spawn $ "variety --resume" )
   , ((mod1Mask, xK_Left), spawn $ "variety -p" )
   , ((mod1Mask, xK_Right), spawn $ "variety -n" )
-  , ((mod1Mask, xK_k), spawn $ "arcolinux-logout" )
   , ((mod1Mask, xK_F2), spawn $ "gmrun" )
   , ((mod1Mask, xK_F3), spawn $ "xfce4-appfinder" )
 
