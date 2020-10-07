@@ -146,7 +146,6 @@ ${color1}[PrtSc]${alignr}${color2}Screenshot${color}
 ${color1}[S]+[Shift]+R${alignr}${color2}Recompile Xmonad${color}
 ${color1}[Alt]+R${alignr}${color2}Restart Xmonad${color}
 ${color1}${hr}${color}
-${color1}[S]+[Shift]+X${alignr}${color2}Stop Xmonad${color}
 ${color1}[S]+[Shift]+Q${alignr}${color2}Stop application${color}
 ${color1}[S]+x${alignr}${color2}Exit${color}
 ${color1}${hr}${color}
