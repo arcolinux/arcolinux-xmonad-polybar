@@ -1,0 +1,12 @@
+mark_today = 1
+close_on_unfocus = 1
+mainwindow_resizable = 0
+mainwindow_sticky = 1
+clock_label = Local
+clock_tz =
+mainwindow_decorated = 0
+mainwindow_keep_above = 0
+mainwindow_skip_taskbar = 1
+mainwindow_yoffset = 40
+mainwindow_xoffset = 0
+clock_format = %a %d %b %H:%M
