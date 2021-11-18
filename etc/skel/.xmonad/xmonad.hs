@@ -243,6 +243,14 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- Decrease brightness
   , ((0, xF86XK_MonBrightnessDown), spawn $ "xbacklight -dec 5")
 
+-- Alternative to increase brightness
+
+  -- Increase brightness
+  -- , ((0, xF86XK_MonBrightnessUp),  spawn $ "brightnessctl s 5%+")
+
+  -- Decrease brightness
+  -- , ((0, xF86XK_MonBrightnessDown), spawn $ "brightnessctl s 5%-")  
+
 --  , ((0, xF86XK_AudioPlay), spawn $ "mpc toggle")
 --  , ((0, xF86XK_AudioNext), spawn $ "mpc next")
 --  , ((0, xF86XK_AudioPrev), spawn $ "mpc prev")
