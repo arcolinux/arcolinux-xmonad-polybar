@@ -243,13 +243,13 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- Decrease brightness
   , ((0, xF86XK_MonBrightnessDown), spawn $ "xbacklight -dec 5")
 
--- Alternative to increase brightness
+  -- Alternative to increase brightness
 
   -- Increase brightness
   -- , ((0, xF86XK_MonBrightnessUp),  spawn $ "brightnessctl s 5%+")
 
   -- Decrease brightness
-  -- , ((0, xF86XK_MonBrightnessDown), spawn $ "brightnessctl s 5%-")  
+  -- , ((0, xF86XK_MonBrightnessDown), spawn $ "brightnessctl s 5%-")
 
 --  , ((0, xF86XK_AudioPlay), spawn $ "mpc toggle")
 --  , ((0, xF86XK_AudioNext), spawn $ "mpc next")
@@ -334,13 +334,12 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- | (i, k) <- zip (XMonad.workspaces conf) [xK_ampersand, xK_eacute, xK_quotedbl, xK_apostrophe, xK_parenleft, xK_minus, xK_egrave, xK_underscore, xK_ccedilla , xK_agrave]
 
   --Belgian Azerty users use this line
-  -- | (i, k) <- zip (XMonad.workspaces conf) [xK_ampersand, xK_eacute, xK_quotedbl, xK_apostrophe, xK_parenleft, xK_section, xK_egrave, xK_exclam, xK_ccedilla, xK_agrave]
+  --   | (i, k) <- zip (XMonad.workspaces conf) [xK_ampersand, xK_eacute, xK_quotedbl, xK_apostrophe, xK_parenleft, xK_section, xK_egrave, xK_exclam, xK_ccedilla, xK_agrave]
 
       , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)
       , (\i -> W.greedyView i . W.shift i, shiftMask)]]
 
   ++
-  -- ctrl-{w,e,r}, Switch to physical/Xinerama screens 1, 2, or 3
   -- ctrl-shift-{w,e,r}, Move client to screen 1, 2, or 3
   -- [((m .|. controlMask, key), screenWorkspace sc >>= flip whenJust (windows . f))
   --    | (key, sc) <- zip [xK_w, xK_e] [0..]
