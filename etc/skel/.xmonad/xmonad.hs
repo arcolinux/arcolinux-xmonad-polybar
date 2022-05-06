@@ -86,7 +86,7 @@ myManageHook = composeAll . concat $
     ]
     where
     -- doShiftAndGo = doF . liftM2 (.) W.greedyView W.shift
-    myCFloats = ["Arandr", "Arcolinux-calamares-tool.py", "Arcolinux-tweak-tool.py", "Arcolinux-welcome-app.py", "Galculator", "feh", "mpv", "Xfce4-terminal"]
+    myCFloats = ["Arandr", "Arcolinux-calamares-tool.py", "Archlinux-tweak-tool.py", "Arcolinux-welcome-app.py", "Galculator", "feh", "mpv", "Xfce4-terminal"]
     myTFloats = ["Downloads", "Save As..."]
     myRFloats = []
     myIgnores = ["desktop_window"]
@@ -176,7 +176,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((controlMask .|. mod1Mask , xK_a ), spawn $ "xfce4-appfinder")
   , ((controlMask .|. mod1Mask , xK_b ), spawn $ "thunar")
   , ((controlMask .|. mod1Mask , xK_c ), spawn $ "catfish")
-  , ((controlMask .|. mod1Mask , xK_e ), spawn $ "arcolinux-tweak-tool")
+  , ((controlMask .|. mod1Mask , xK_e ), spawn $ "archlinux-tweak-tool")
   , ((controlMask .|. mod1Mask , xK_f ), spawn $ "firefox")
   , ((controlMask .|. mod1Mask , xK_g ), spawn $ "chromium -no-default-browser-check")
   , ((controlMask .|. mod1Mask , xK_i ), spawn $ "nitrogen")
