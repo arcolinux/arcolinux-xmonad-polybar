@@ -21,7 +21,7 @@ import XMonad.Layout.Gaps
 import XMonad.Layout.ResizableTile
 ---import XMonad.Layout.NoBorders
 import XMonad.Layout.Fullscreen (fullscreenFull)
-import XMonad.Layout.Cross(simpleCross)
+import XMonad.Layout.CircleEx
 import XMonad.Layout.Spiral(spiral)
 import XMonad.Layout.ThreeColumns
 import XMonad.Layout.MultiToggle
